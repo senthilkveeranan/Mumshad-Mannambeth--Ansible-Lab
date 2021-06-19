@@ -1,0 +1,10 @@
+Ansible Playbook:
+================
+Ansible playbooks are archestration language. its in playbooks to define
+what we want Ansible to do .
+
+A playbooks is single yaml file containing a set of plays, play defines
+set of activities on a single or group of hosts .
+
+Task is an single action to be performed on a host.
+

@@ -1,0 +1,23 @@
+---
+ - hosts: web
+   tasks:
+      - name: Execute command 'date'
+        command: date
+
+      - name: Execute Shell script
+        script: test_script.sh
+
+
+ - hosts: prod
+   tasks:
+      - name: Install web service
+        yum:
+           name: httpd
+           state: present
+
+
+      - name: Start the service
+        service:
+           name: httpd
+           state: started
+

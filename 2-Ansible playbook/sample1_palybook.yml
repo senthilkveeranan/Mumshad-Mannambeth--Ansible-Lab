@@ -1,0 +1,8 @@
+---
+ - hosts: web
+   tasks:
+      - name: Execute command 'date'
+        command: date
+
+      - name: Execute script on server web
+        script: test_script.sh

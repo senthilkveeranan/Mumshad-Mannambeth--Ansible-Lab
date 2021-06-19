@@ -1,0 +1,7 @@
+---
+ - hosts: all
+   become: False
+   gather_facts: No
+   tasks:
+    - name: ping test
+      ping:
